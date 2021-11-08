@@ -1,4 +1,4 @@
-// 2021.11.01 FROM (MIMO) 
+// 2021.11.01 FROM (MM) 
 /*----------------------------------*/
 //! EXPLORE EVENT PROPERTIES
 //! we can add EVENTs to any HTML element

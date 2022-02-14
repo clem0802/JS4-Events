@@ -1,12 +1,10 @@
 // 2021.11.01 FROM (MM) 
-/*----------------------------------*/
-//! EXPLORE EVENT PROPERTIES
+/*----------------------------------*/ (EXPLORE EVENT PROPERTIES)
 //! we can add EVENTs to any HTML element
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (1)
-//! EVENT PROPERTIES
+/*----------------------------------*/ (1) EVENT PROPERTIES
 // add EVENTS to other elements types if we want to 
 // we can add ONCLICK to a DIV element
 
@@ -36,7 +34,9 @@ body {
     text-align: center;
 }
 
-//?? (JavaScript)------------------
+// (JavaScript)------------------
+// We can add events to other elements types if we want to. 
+// For example we can add onclick to a div element.
 function changeColor() {
     item.classList.toggle("pink");
 }
@@ -48,8 +48,7 @@ item.onclick = changeColor; //! ONCLICK
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (2)
-//! ONDBCLICK
+/*----------------------------------*/ (2) ONDBCLICK
 // depending on how we wan the element to behave, we might want to add a different EVENT
 // ie: tapping an item to change its color makes more sense to happen on a double click => ONDBCLICK (ondbclick)
 
@@ -77,6 +76,7 @@ item.onclick = changeColor; //! ONCLICK
 }
 
 //?? (JavaScript)------------------
+// Tapping an item to change its color makes more sense to happen on a double click. (ondblclick)
 function changeColor() {
     item.classList.toggle("pink");
 }
@@ -89,8 +89,7 @@ item.ondbclick = changeColor; //! ONDBCLICK
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (3)
-//! ONSCROLL
+/*----------------------------------*/ (3) ONSCROLL
 // if we want to trigger an EVENT when a user scolls on a webpage, we can sje the "onscroll" PROPERTY
 // code "onscroll" and scroll down to change the background color
 
@@ -124,7 +123,7 @@ function changeToBlue() {
 function changeToPink() {
     textarea.style.backgroundColor = "pink";
 }
-var textarea = document.querySelector("textarea"):
+var textarea = document.querySelector("textarea");
 textarea.onscroll = changeToPink; //! ONSCROLL
 
 
@@ -132,8 +131,7 @@ textarea.onscroll = changeToPink; //! ONSCROLL
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (4)
-//! ONCHANGE   => ça donne vraiment une "current date" (Jour/Mois/Année)
+/*----------------------------------*/ (4) ONCHANGE => ça donne vraiment une "current date" (Jour/Mois/Année)
 //! en cliquant, on a à notre disposition un calendrier à cliquer sur la bonne date /ou la date souhaitée
 // if we want to trigger an EVENT when an INPUT field changes its value, we can use the "ONCAHNGE" PROPERTY
 //! the property only triggers "AFTER" the change is done
@@ -163,10 +161,9 @@ input.onchange = updateValue; //! ONCHANGE
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (5)
-//! ONINPUT
+/*----------------------------------*/ (5) ONINPUT
+// changes are displayed "WHILE" they are taken place
 // if we want to trigger an EVENT anytime an element's INPUT changes, we use the "oninput" PROPERTY
-//! changes are displayed "WHILE" they are taken place
 
 //?? (HTML)------------------
 <!doctype html>
@@ -191,7 +188,7 @@ input.oninput = updateValue; //! ONINPUT
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (6)
+/*----------------------------------*/ (6) ONCHANGE
 // for this code displays changes to the INPUT element only "AFTER" the chnages are done
 
 //?? (HTML)------------------

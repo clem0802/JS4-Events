@@ -130,7 +130,8 @@ function publish() {
 }
 var prompt = document.querySelector("#prompt");
 var el = document.querySelector("button");
-el.onclick = published; //! 
+el.onclick = published; //
+// Once we have the property, we can call a function by adding = and the function name, "without parentheses"
 // (output) a button written as "Publish website"
 
 
@@ -138,8 +139,9 @@ el.onclick = published; //!
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (3)
-// once we have th ePROPERTY, we can CALL a FUNCTION by adding (=) and the FUNCTION name without parentheses
+/*----------------------------------*/ (3) EVENT HANDLER
+// The function called after an event is triggered is referred to as an "event handler".
+// once we have the PROPERTY, we can CALL a FUNCTION by adding = and the FUNCTION name, "without parentheses"
 // add the "ONCLICK" PROPERTIES
 
 //?? (HTML)------------------
@@ -165,8 +167,7 @@ el.onclick = publish;
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (4)
-//! EVENT HANDLER
+/*----------------------------------*/ (4) EVENT HANDLER
 // the FUNCTION CALLED "after" an EVENT is triggered, => //! EVENT HANDLER
 // we specify how we want the EVENT to be handled inside these types of FUNCTIONS 
 // CONTENT below the same as (3)

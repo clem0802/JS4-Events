@@ -141,12 +141,11 @@ item.addEventListener("click", changeColor);
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (4)
-//! addEventListener()  METHOD
-//?  addEventListener  defines WHAT EVENT HANDLER to be called when an event is TRIGGERED on an element
-//?  inside  addEventListener METHOD we add the (name of the EVENT), followed by the (EVENT HANDLER name)
+/*----------------------------------*/ (4)  addEventListener()  METHOD
+// addEventListener  defines "WHAT EVENT HANDLER" to be called when an event is TRIGGERED on an element
+// inside  addEventListener METHOD, we add the (name of the EVENT), followed by the (EVENT HANDLER name)
 // if we want an element to have multiple event handlers for the same element
-// we can add them one by one with the  addEventListener() METHOD
+// we can add them one by one with the   addEventListener() METHOD
 
 <!doctype html>
 <html>
@@ -154,7 +153,7 @@ item.addEventListener("click", changeColor);
         <link rel="stylesheet" href="style.css"> 
     </head>
     <body> 
-        <button>Height & Width</button>
+        <button>Height&Width</button>
         <button>Height</button>
         <button>Width</button>
         <div class="default">Check and see</div>
@@ -191,3 +190,10 @@ el[0].addEventListener("click", changeHeight);
 el[0].addEventListener("click", changeWidth);
 el[1].addEventListener("click", changeHeight);
 el[2].addEventListener("click", changeWidth);
+                          |           |
+                          V           V
+                (name of event)(event handler name)
+                                 (function name)
+
+
+

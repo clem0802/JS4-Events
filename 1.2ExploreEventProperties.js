@@ -4,7 +4,7 @@
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (1) EVENT PROPERTIES
+/*----------------------------------*/ (1) ONCLICK
 // add EVENTS to other elements types if we want to 
 // we can add ONCLICK to a DIV element
 
@@ -45,8 +45,6 @@ item.onclick = changeColor; //! ONCLICK
 
 
 
-
-
 /*----------------------------------*/
 /*----------------------------------*/ (2) ONDBCLICK
 // depending on how we wan the element to behave, we might want to add a different EVENT
@@ -59,7 +57,7 @@ item.onclick = changeColor; //! ONCLICK
         <link rel="stylesheet" href="style.css"> 
     </head>
     <body> 
-        <div class="item">Click me to change color</div>
+        <div class="item">Double-Click me to change color</div>
         <script src="script.js"></script>
     </body>
 </html>
@@ -85,12 +83,9 @@ item.ondbclick = changeColor; //! ONDBCLICK
 
 
 
-
-
-
 /*----------------------------------*/
 /*----------------------------------*/ (3) ONSCROLL
-// if we want to trigger an EVENT when a user scolls on a webpage, we can sje the "onscroll" PROPERTY
+// if we want to trigger an EVENT when a user scolls on a webpage, we can set the "onscroll" PROPERTY
 // code "onscroll" and scroll down to change the background color
 
 //?? (HTML)------------------
@@ -128,13 +123,13 @@ textarea.onscroll = changeToPink; //! ONSCROLL
 
 
 
-
-
 /*----------------------------------*/
-/*----------------------------------*/ (4) ONCHANGE => ça donne vraiment une "current date" (Jour/Mois/Année)
+/*----------------------------------*/ (4) ONCHANGE 
+// ça donne vraiment une "current date" (Jour/Mois/Année)
 //! en cliquant, on a à notre disposition un calendrier à cliquer sur la bonne date /ou la date souhaitée
 // if we want to trigger an EVENT when an INPUT field changes its value, we can use the "ONCAHNGE" PROPERTY
-//! the property only triggers "AFTER" the change is done
+// the property only triggers "AFTER" the change is done
+// the result is displayed only "AFTER" the change is done
 
 //?? (HTML)------------------
 <!doctype html>
@@ -142,7 +137,7 @@ textarea.onscroll = changeToPink; //! ONSCROLL
     <body> 
         <p>Date:</p>
         <input type="date">
-        <p>New Date</p>
+        <p>New Range</p>
         <p id="log"></p>
         <script src="script.js"></script>
     </body>
@@ -158,11 +153,9 @@ input.onchange = updateValue; //! ONCHANGE
 
 
 
-
-
 /*----------------------------------*/
 /*----------------------------------*/ (5) ONINPUT
-// changes are displayed "WHILE" they are taken place
+// to display any input change "WHILE" (DURING) it takes place
 // if we want to trigger an EVENT anytime an element's INPUT changes, we use the "oninput" PROPERTY
 
 //?? (HTML)------------------
@@ -182,8 +175,6 @@ function updateValue() {
 var input = document.querySelector("input");
 var log = document.getElementById("log");
 input.oninput = updateValue; //! ONINPUT
-
-
 
 
 

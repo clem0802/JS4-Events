@@ -104,8 +104,6 @@ function removeFormat() {
 
 
 
-
-
 /*----------------------------------*/
 /*----------------------------------*/ (2) EVENT
 // another more maintainable way of adding EVENTS is with EVENT PROPERTIES
@@ -133,8 +131,6 @@ el.onclick = published; //
 
 
 
-
-
 /*----------------------------------*/
 /*----------------------------------*/ (3) EVENT HANDLER
 // The function called after an event is triggered is referred to as an "event handler".
@@ -158,8 +154,6 @@ function publish() {
 var prompt = document.querySelector("#prompt");
 var el = document.querySelector("button");
 el.onclick = publish;
-
-
 
 
 
@@ -191,8 +185,6 @@ el.onclick = publish;
 
 
 
-
-
 /*----------------------------------*/
 /*----------------------------------*/ (5) EVENT HANDLER
 // make this code change how the button looks after it is pressed
@@ -216,8 +208,6 @@ function publish() {
 }
 var el = document.querySelector("button");
 el.onclick = changeColor; //! 
-
-
 
 
 

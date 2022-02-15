@@ -92,6 +92,7 @@ item.ondbclick = changeColor; //! ONDBCLICK
 <!doctype html>
 <html>
     <body> 
+        <h2>A Testing Page</h2>
         <textarea style="height: 100px; width: 100%">
         "This is a testing page, a testing page, a testing page, a testing page, a testing page,a testing page, a testing page.
         This is a testing page, a testing page, a testing page, a testing page, a testing page,a testing page, a testing page.
@@ -107,19 +108,20 @@ item.ondbclick = changeColor; //! ONDBCLICK
         This is a testing page, a testing page, a testing page, a testing page, a testing page,a testing page, a testing page.
         This is a testing page, a testing page, a testing page, a testing page, a testing page,a testing page, a testing page."
         </textarea>
+        <p>- George Graham Vest, 1870</p>
         <script src="script.js"></script>
     </body>
 </html>
 
 //?? (JavaScript)------------------
 function changeToBlue() {
-    textarea.style.backgroundColor = "aliceBlue";
+    textarea.style.backgroundColor = "dodgerBlue";
 }
-function changeToPink() {
-    textarea.style.backgroundColor = "pink";
+function changeTogreen() {
+    textarea.style.backgroundColor = "green";
 }
 var textarea = document.querySelector("textarea");
-textarea.onscroll = changeToPink; //! ONSCROLL
+textarea.onscroll = changeToBlue; //! ONSCROLL
 
 
 

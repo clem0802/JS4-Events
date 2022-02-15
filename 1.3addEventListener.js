@@ -2,6 +2,7 @@
 /*----------------------------------*/
 //! ADD EVENT WITH METHODS
 //! learn about a newer way of adding EVENTS to elemnts 
+"click" and "dbclick", can be used with "addEventListener()"
 
 
 /*----------------------------------*/
@@ -44,7 +45,7 @@ function changeColor() {
     item.classList.toggle("pink");
 }
 var item = document.querySelector("div");
-item.addEventListener("click", changeColor); //!  .addEventListener("click", changeColor);
+item.addEventListener("click", changeColor); // couleur ALTERNE entre bleu et rose
 
 
 
@@ -88,10 +89,10 @@ body {
 //?? (JavaScript)------------------
 function changeColor() {  //!  changeColor()  is an EVENT HANDLER
     item.classList.toggle("pink");
-    item.removeEventListener("click", changeColor); //!  .removeEventListener("click", changeColor);
+    item.removeEventListener("click", changeColor); 
 }
 var item = document.querySelector("div");
-item.addEventListener("click", changeColor); //!
+item.addEventListener("click", changeColor); // une fois changée en rose, ne se modifie plus
 
 
 
@@ -103,7 +104,7 @@ item.addEventListener("click", changeColor); //!
 //!  ATTENTION à celui-ci  !!!!
 // what will this element do the second time we tap it? //! 
 // after 1st tap => pink 
-// after 2nd tap => NOTHING //!  NOTHING !!! (the pink color remains)
+// after 2nd tap => NOTHING, the pink color remains
 
 <!doctype html>
 <html>
@@ -194,6 +195,37 @@ el[2].addEventListener("click", changeWidth);
                           V           V
                 (name of event)(event handler name)
                                  (function name)
+
+
+
+/*----------------------------------*/
+/*----------------------------------*/ (5)
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <h3>To Do</h3>
+  <ul>
+   <li id="item-1">Work out</li>
+  </ul>
+  <button>Clear Item</button>
+  <script src="script.js"></script>
+ </body>
+</html>
+
+//?? (JavaScript)------------------
+function removeItem() {
+ itemOne.innerText = "";
+}
+var clearButton = document.querySelector("button");
+var itemOne = document.querySelector("#item-1");
+clearButton.addEventListener("click", removeItem);
+
+
+
+
 
 
 

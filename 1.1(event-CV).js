@@ -222,7 +222,7 @@ el.onclick = changeColor; //!
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (6) EVENT HANDLER
+/*----------------------------------*/ (6) EVENT HANDLER (pour CV - portfolio)
 // Assign the function clicked to the button with an onclick event 
 // to change the innerText to read "Button Clicked!"
 

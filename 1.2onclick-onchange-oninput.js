@@ -121,9 +121,9 @@ item.addEventListener("click", changeShape); // the shape changes upon the click
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (4) ONDBCLICK
+/*----------------------------------*/ (4) ONDBLCLICK
 // depending on how we wan the element to behave, we might want to add a different EVENT
-// ie: tapping an item to change its color makes more sense to happen on a double click => ONDBCLICK (ondbclick)
+// ie: tapping an item to change its color makes more sense to happen on a double click => ONDBLCLICK (ondblclick)
 
 //?? (HTML)------------------
 <!doctype html>
@@ -153,7 +153,7 @@ function changeColor() {
     item.classList.toggle("pink");
 }
 var item = document.querySelector("div");
-item.ondbclick = changeColor; //! ONDBCLICK
+item.ondblclick = changeColor; //! ONDBCLICK
 
 
 

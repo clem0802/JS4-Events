@@ -21,7 +21,6 @@
 </html>
 
 //?? (CSS)------------------
-
 .item {
     background-color: skyBlue;
     height: 100px;
@@ -46,7 +45,83 @@ item.onclick = changeColor; //! ONCLICK
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (2) ONDBCLICK
+/*----------------------------------*/ (2) ONCLICK
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <div class="item">Click to toggle colors.</div>
+  <script src="script.js"></script>
+ </body>
+</html>
+
+//?? (CSS)------------------
+.item {
+ background-color: rebeccapurple;
+ color: white;
+ height: 100px;
+ width: 100px;
+ padding: 25px;
+ margin: 25px;
+}
+.red {
+ background-color: darkred;
+}
+
+// (JavaScript)------------------
+function changeColor() {
+ item.classList.toggle("red");
+}
+
+var item = document.querySelector("div");
+item.onclick = changeColor;
+
+
+
+/*----------------------------------*/
+/*----------------------------------*/ (3) ONCLICK
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <div class="item">Click to toggle shapes.</div>
+  <script src="script.js"></script>
+ </body>
+</html>
+
+//?? (CSS)------------------
+.item {
+ background-color: dodgerblue;
+ color: white;
+ height: 100px;
+ width: 100px;
+ padding: 25px;
+ margin: 25px;
+}
+
+.purple {
+ background-color: rebeccapurple;
+ height: 150px;
+ width: 150px;
+ border-radius: 25%;
+}
+
+// (JavaScript)------------------
+function changeShape() {
+ item.classList.toggle("purple");
+}
+
+var item = document.querySelector("div");
+item.addEventListener("click", changeShape); // the shape changes upon the click
+
+
+
+/*----------------------------------*/
+/*----------------------------------*/ (4) ONDBCLICK
 // depending on how we wan the element to behave, we might want to add a different EVENT
 // ie: tapping an item to change its color makes more sense to happen on a double click => ONDBCLICK (ondbclick)
 
@@ -63,7 +138,6 @@ item.onclick = changeColor; //! ONCLICK
 </html>
 
 //?? (CSS)------------------
-
 .item {
     background-color: skyBlue;
     height: 100px;
@@ -84,7 +158,7 @@ item.ondbclick = changeColor; //! ONDBCLICK
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (3) ONSCROLL
+/*----------------------------------*/ (5) ONSCROLL
 // if we want to trigger an EVENT when a user scolls on a webpage, we can set the "onscroll" PROPERTY
 // code "onscroll" and scroll down to change the background color
 
@@ -126,7 +200,7 @@ textarea.onscroll = changeToBlue; //! ONSCROLL
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (4) ONCHANGE 
+/*----------------------------------*/ (6) ONCHANGE 
 // ça donne vraiment une "current date" (Jour/Mois/Année)
 //! en cliquant, on a à notre disposition un calendrier à cliquer sur la bonne date /ou la date souhaitée
 // if we want to trigger an EVENT when an INPUT field changes its value, we can use the "ONCAHNGE" PROPERTY
@@ -156,7 +230,7 @@ input.onchange = updateValue; //! ONCHANGE
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (5) ONINPUT
+/*----------------------------------*/ (7) ONINPUT
 // to display any input change "WHILE" (DURING) it takes place
 // if we want to trigger an EVENT anytime an element's INPUT changes, we use the "oninput" PROPERTY
 
@@ -181,7 +255,7 @@ input.oninput = updateValue; //! ONINPUT
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (6) ONCHANGE
+/*----------------------------------*/ (8) ONCHANGE
 // for this code displays changes to the INPUT element only "AFTER" the chnages are done
 
 //?? (HTML)------------------

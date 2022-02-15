@@ -1,6 +1,5 @@
 // 2021.11.01 FROM (MM) 
-/*----------------------------------*/
-// EVENT PROPERTIES
+/*----------------------------------*/ EVENT PROPERTIES
 // learn how to make webpages react to user interactions that are different from buttons
 // webpages know when to react to user interactions because of EVENTS
 // every time when pressed on a BUTTON with the "ONCLICK" ATTRIBUTE, we are using the "click" EVENT 
@@ -8,8 +7,7 @@
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (1)
-//! EVENT
+/*----------------------------------*/ (1) EVENT
 // HTML EVENT ATTRIBUTES are easy to use, but they are a bit outdated and harder to manage for bigger chunks of code
 // ATTRIBUTES make the HTML hard to manage and read even for short code like the one below
 
@@ -109,9 +107,8 @@ function removeFormat() {
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (2)
-//! EVENT
-// a more maintainable way of adding EVENTS is with EVENT PROPERTIES
+/*----------------------------------*/ (2) EVENT
+// another more maintainable way of adding EVENTS is with EVENT PROPERTIES
 // add the "ONCLICK" PROPERTIES
 
 //?? (HTML)------------------
@@ -125,7 +122,7 @@ function removeFormat() {
 </html>
 
 //?? (JavaScript)------------------
-function publish() {
+function published() {
     prompt.innerText = "website Published";
 }
 var prompt = document.querySelector("#prompt");
@@ -197,8 +194,7 @@ el.onclick = publish;
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (5)
-//! EVENT HANDLER
+/*----------------------------------*/ (5) EVENT HANDLER
 // make this code change how the button looks after it is pressed
 
 //?? (HTML)------------------
@@ -220,3 +216,32 @@ function publish() {
 }
 var el = document.querySelector("button");
 el.onclick = changeColor; //! 
+
+
+
+
+
+/*----------------------------------*/
+/*----------------------------------*/ (6) EVENT HANDLER
+// Assign the function clicked to the button with an onclick event 
+// to change the innerText to read "Button Clicked!"
+
+//?? (HTML)------------------
+<!doctype html>
+<html>
+ <body>
+  <button>Click Me</button>
+  <p id="phrase"></p> 
+  <script src="script.js"></script>
+ </body>
+</html>
+
+//?? (JavaScript)------------------
+function clicked() {
+ phrase.innerText = "Button Clicked!";
+}
+
+var phrase = document.querySelector("#phrase");
+var button = document.querySelector("button");
+button.onclick = clicked; // 
+
